@@ -27,8 +27,8 @@
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="text" name="color" placeholder="Product Color" required>
-            <input type="number" id="quantity" placeholder="Quantity" min="1" required>
-            <p id="totalAmount">Total: $0</p>
+            <input type="number" name="Quantity" id="quantity" placeholder="Quantity" min="1" required>
+            <p id="totalAmount">Total: ₹0</p>
             <input type="hidden" name="totalAmount" id="hiddenTotalAmount">
             <button type="submit" class="btn">Place Order</button>
           </form>
@@ -61,7 +61,7 @@
 
       const total = quantity * discountPrice;
 
-      totalAmount.textContent = `Total: $${total}`;
+      totalAmount.textContent = `Total: ₹${total}`;
       hiddenTotalAmount.value = total;
     });
   </script>
